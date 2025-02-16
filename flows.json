@@ -1,0 +1,1406 @@
+[
+    {
+        "id": "33c3a2507dd0fc0c",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "68dd58fa31033fc9",
+        "type": "tab",
+        "label": "Flow 2",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "c4eb0691b4cefa73",
+        "type": "ui_tab",
+        "name": "Smart Haum",
+        "icon": "dashboard",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "d6ab1fa2cea70e75",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-dark",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#eb9c2d",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#67db24",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "reset": false
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#097479",
+                    "value": "#eb9c2d",
+                    "edited": true
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#eb9c2d",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#111111",
+                    "edited": true
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": true
+                },
+                "group-textColor": {
+                    "value": "#f2bd73",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#555555",
+                    "edited": true
+                },
+                "group-backgroundColor": {
+                    "value": "#333333",
+                    "edited": true
+                },
+                "widget-textColor": {
+                    "value": "#eeeeee",
+                    "edited": true
+                },
+                "widget-backgroundColor": {
+                    "value": "#eb9c2d",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#333333",
+                    "edited": true
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "false",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "08cc7bb34804c4f3",
+        "type": "ui_group",
+        "name": "Data o počasí",
+        "tab": "c4eb0691b4cefa73",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "0d3c70fea13c1070",
+        "type": "ui_group",
+        "name": "Teplota v Brně",
+        "tab": "c4eb0691b4cefa73",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "5be0536f4f49f91e",
+        "type": "ui_group",
+        "name": "Ovládání topení",
+        "tab": "c4eb0691b4cefa73",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "5d292e3625579799",
+        "type": "ui-base",
+        "name": "My Dashboard",
+        "path": "/dashboard",
+        "includeClientData": true,
+        "acceptsClientConfig": [
+            "ui-notification",
+            "ui-control"
+        ],
+        "showPathInSidebar": false,
+        "navigationStyle": "default"
+    },
+    {
+        "id": "666b3cb6cc134d4b",
+        "type": "ui-theme",
+        "z": "33c3a2507dd0fc0c",
+        "name": "Default Theme",
+        "colors": {
+            "surface": "#ffffff",
+            "primary": "#cc001f",
+            "bgPage": "#eeeeee",
+            "groupBg": "#ffffff",
+            "groupOutline": "#cccccc"
+        },
+        "sizes": {
+            "pagePadding": "12px",
+            "groupGap": "12px",
+            "groupBorderRadius": "4px",
+            "widgetGap": "12px"
+        }
+    },
+    {
+        "id": "64088b2f3bb5647c",
+        "type": "ui-page",
+        "name": "Page N",
+        "ui": "5d292e3625579799",
+        "path": "/pageN",
+        "icon": "home",
+        "layout": "grid",
+        "theme": "666b3cb6cc134d4b",
+        "order": -1,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "207f73f8e8d58534",
+        "type": "ui-group",
+        "name": "My Group",
+        "page": "64088b2f3bb5647c",
+        "width": "6",
+        "height": "1",
+        "order": -1,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "7db45a2e2009a112",
+        "type": "ui_group",
+        "name": "",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": "25",
+        "collapse": false,
+        "className": "clock"
+    },
+    {
+        "id": "43a6031239b27579",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "localhost",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "1a7f0c97.949c97",
+        "type": "ui_group",
+        "name": "Čísla",
+        "tab": "7321a3ff.250e24",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "7321a3ff.250e24",
+        "type": "ui_tab",
+        "name": "Porovnání",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "03fe9a9db6ce5bdd",
+        "type": "ui_tab",
+        "name": "Počasí",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "000102e829030bdb",
+        "type": "ui_group",
+        "name": "Tlak",
+        "tab": "03fe9a9db6ce5bdd",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "2bbb676bb3f84179",
+        "type": "ui_group",
+        "name": "Teplota",
+        "tab": "03fe9a9db6ce5bdd",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "df60bb93ef149082",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "127.0.0.1",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "32dc3111e2bc4716",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "mqtt.m5stack.com",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "eb6c9875cedf519d",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "127.0.0.1",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "651c134695e5a1fe",
+        "type": "ui_group",
+        "name": "",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": "25",
+        "collapse": false,
+        "className": "clock"
+    },
+    {
+        "id": "bf8e66ec7015e5b3",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "10.24.51.45",
+        "port": "1888",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "ea17c8cd6c7fe605",
+        "type": "ui_spacer",
+        "z": "33c3a2507dd0fc0c",
+        "name": "spacer",
+        "group": "5be0536f4f49f91e",
+        "order": 3,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "9e6a6018354f7091",
+        "type": "ui_spacer",
+        "z": "33c3a2507dd0fc0c",
+        "name": "spacer",
+        "group": "5be0536f4f49f91e",
+        "order": 4,
+        "width": 6,
+        "height": 1
+    },
+    {
+        "id": "3b3fcbf28ec4be97",
+        "type": "openweathermap",
+        "z": "33c3a2507dd0fc0c",
+        "name": "weather",
+        "wtype": "current",
+        "lon": "16.608",
+        "lat": "49.1952",
+        "city": "",
+        "country": "",
+        "language": "en",
+        "x": 440,
+        "y": 600,
+        "wires": [
+            [
+                "38b29e4eb7e24e88",
+                "1c32f9a8da1e0c9b",
+                "7bc1d25c9bedc47b",
+                "d3d266cbfef0a469",
+                "bee7b1627cc2c4a7",
+                "2cead33e204fa017",
+                "d8d3fbe9107ad80d",
+                "8f7d9b37a9e74adf"
+            ]
+        ]
+    },
+    {
+        "id": "364bdc5727dd966c",
+        "type": "inject",
+        "z": "33c3a2507dd0fc0c",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "60",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "5",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 110,
+        "y": 600,
+        "wires": [
+            [
+                "862543a5239cf857"
+            ]
+        ]
+    },
+    {
+        "id": "d8d3fbe9107ad80d",
+        "type": "change",
+        "z": "33c3a2507dd0fc0c",
+        "name": "",
+        "rules": [
+            {
+                "t": "move",
+                "p": "payload.tempc",
+                "pt": "msg",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 770,
+        "y": 560,
+        "wires": [
+            [
+                "a60dd902ab8fbad1"
+            ]
+        ]
+    },
+    {
+        "id": "a60dd902ab8fbad1",
+        "type": "ui_chart",
+        "z": "33c3a2507dd0fc0c",
+        "name": "",
+        "group": "0d3c70fea13c1070",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "label": "",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "-40",
+        "ymax": "50",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#ffffff",
+            "#ffffff",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 990,
+        "y": 560,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "38b29e4eb7e24e88",
+        "type": "ui_text",
+        "z": "33c3a2507dd0fc0c",
+        "group": "08cc7bb34804c4f3",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Teplota",
+        "format": "{{msg.payload.tempc}} °C",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 720,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "1c32f9a8da1e0c9b",
+        "type": "ui_text",
+        "z": "33c3a2507dd0fc0c",
+        "group": "08cc7bb34804c4f3",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Rychlost větru",
+        "format": "{{msg.payload.windspeed}} km/h",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 740,
+        "y": 740,
+        "wires": []
+    },
+    {
+        "id": "7bc1d25c9bedc47b",
+        "type": "ui_text",
+        "z": "33c3a2507dd0fc0c",
+        "group": "08cc7bb34804c4f3",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Vlhkost",
+        "format": "{{msg.payload.humidity}} %",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 720,
+        "y": 780,
+        "wires": []
+    },
+    {
+        "id": "d3d266cbfef0a469",
+        "type": "ui_text",
+        "z": "33c3a2507dd0fc0c",
+        "group": "08cc7bb34804c4f3",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Oblačnost",
+        "format": "{{msg.payload.clouds}} %",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 730,
+        "y": 820,
+        "wires": []
+    },
+    {
+        "id": "a4fbddc5c89cce76",
+        "type": "ui_widget_thermometer",
+        "z": "33c3a2507dd0fc0c",
+        "group": "0d3c70fea13c1070",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "title": "Venkovní teplota",
+        "numColor": 3,
+        "colorTop": "#f94e4e",
+        "colorMiddle": "#8bc34a",
+        "colorBottom": "#52abff",
+        "unit": "°C",
+        "scale": "normal",
+        "minTemp": "-40",
+        "maxTemp": "40",
+        "minTempMoreThanMaxTemp": "1",
+        "numberOfDecimals": "1",
+        "showPercentage": "0",
+        "currentTempFontSize": "1.2",
+        "x": 1010,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "bee7b1627cc2c4a7",
+        "type": "change",
+        "z": "33c3a2507dd0fc0c",
+        "name": "",
+        "rules": [
+            {
+                "t": "move",
+                "p": "payload.tempc",
+                "pt": "msg",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 770,
+        "y": 600,
+        "wires": [
+            [
+                "a4fbddc5c89cce76"
+            ]
+        ]
+    },
+    {
+        "id": "2cead33e204fa017",
+        "type": "ui_text",
+        "z": "33c3a2507dd0fc0c",
+        "group": "08cc7bb34804c4f3",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Tlak",
+        "format": "{{msg.payload.pressure}} hPa",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 710,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "3d2bb6c5d4ddec0a",
+        "type": "ui_text",
+        "z": "33c3a2507dd0fc0c",
+        "group": "08cc7bb34804c4f3",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Topení",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 1490,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "a84ed976e481801e",
+        "type": "ui_numeric",
+        "z": "33c3a2507dd0fc0c",
+        "name": "",
+        "label": "Požadovaná teplota",
+        "tooltip": "",
+        "group": "5be0536f4f49f91e",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "wrap": false,
+        "passthru": true,
+        "topic": "hranice",
+        "topicType": "msg",
+        "format": "{{value}} °C",
+        "min": "-40",
+        "max": "40",
+        "step": 1,
+        "className": "",
+        "x": 300,
+        "y": 260,
+        "wires": [
+            [
+                "985fb15bf0fe6b39",
+                "8b0fdd6c3afc4237"
+            ]
+        ]
+    },
+    {
+        "id": "52c0e2dc900d71a9",
+        "type": "ui_digital_clock",
+        "z": "33c3a2507dd0fc0c",
+        "name": "",
+        "group": "5be0536f4f49f91e",
+        "order": 2,
+        "width": 4,
+        "height": 1,
+        "x": 290,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "ca77704ea89ce959",
+        "type": "inject",
+        "z": "33c3a2507dd0fc0c",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 110,
+        "y": 700,
+        "wires": [
+            [
+                "52c0e2dc900d71a9"
+            ]
+        ]
+    },
+    {
+        "id": "2759cde98dde034b",
+        "type": "ui_toast",
+        "z": "33c3a2507dd0fc0c",
+        "position": "top right",
+        "displayTime": "3",
+        "highlight": "-",
+        "sendall": true,
+        "outputs": 0,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "className": "",
+        "topic": "Topení v režimu:",
+        "name": "",
+        "x": 1670,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "d2edbb93fdfbb217",
+        "type": "ui_dropdown",
+        "z": "33c3a2507dd0fc0c",
+        "name": "",
+        "label": "Topení",
+        "tooltip": "",
+        "place": "Select option",
+        "group": "5be0536f4f49f91e",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "zapnuto",
+                "value": "zapnuto",
+                "type": "str"
+            },
+            {
+                "label": "automat",
+                "value": "automat",
+                "type": "str"
+            },
+            {
+                "label": "vypnuto",
+                "value": "vypnuto",
+                "type": "str"
+            }
+        ],
+        "payload": "",
+        "topic": "-",
+        "topicType": "msg",
+        "className": "",
+        "x": 250,
+        "y": 400,
+        "wires": [
+            [
+                "c0a94fae8fb51a6f"
+            ]
+        ]
+    },
+    {
+        "id": "8f7d9b37a9e74adf",
+        "type": "change",
+        "z": "33c3a2507dd0fc0c",
+        "name": "",
+        "rules": [
+            {
+                "t": "move",
+                "p": "payload.tempc",
+                "pt": "msg",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 770,
+        "y": 520,
+        "wires": [
+            [
+                "fb6201451a3ac9c1",
+                "65d2a5d5014a3a0c"
+            ]
+        ]
+    },
+    {
+        "id": "862543a5239cf857",
+        "type": "ui_template",
+        "z": "33c3a2507dd0fc0c",
+        "group": "5be0536f4f49f91e",
+        "name": "",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "format": "<style>\n\n    /*Main background*/\n    body {\n        background: -webkit-linear-gradient(55deg,\n                #00BFFF 0%,\n                #008000 50%,\n                #FFA500 100%);\n    }\n\n    /*Top bar*/\n    body.nr-dashboard-theme md-toolbar,\n    body.nr-dashboard-theme md-content md-card {\n        background-color: transparent !important;\n        color: #ffffff !important;\n    }\n\n/*Left menu*/\n/*Sidebar*/\nbody.nr-dashboard-theme md-sidenav {\ncolor: white !important;\nbackground-color: rgba(0,0,0,0) !important;\n}\n/*Hover selection*/\na.md-no-style, button.md-no-style {\nborder-radius: 10px !important;\n}\n/*Selected*/\n.nr-menu-item-active div button {\nborder-right: 4px solid rgb(41 98 255) !important;\n}\n/*List*/\nbody.nr-dashboard-theme md-sidenav div.md-list-item-inner {\ncolor: white !important;\nbackground-color: rgba(40,85,165,1) !important;\nborder-radius: 10px !important;\n}\n\n\n/*Groups*/\nui-card-panel {\nbackground-color: rgba(255,255,255,0.1) !important;\nborder-radius: 10px !important;\n}\n.nr-dashboard-theme ui-card-panel {\nborder: none !important;\n}\n/*Name groups*/\n.nr-dashboard-theme ui-card-panel p.nr-dashboard-cardtitle {\ncolor: gba(255,255,255,.1) !important;\n}\n\n\n/*Bouttons*/\n.nr-dashboard-theme .nr-dashboard-button .md-button {\nbackground-color: rgba(255,255,255,.1) !important;\n}\n.md-button {\nborder-radius: 10px !important;\n}\n\n\n/*Dropdown menu*/\n.nr-dashboard-theme md-select-menu{\nbackground-color: rgba(40,85,165,1) !important;\n}\n.nr-dashboard-theme md-select-menu, .nr-dashboard-theme md-select-menu md-option {\nbackground-color: transparent !important;\n}\n.nr-dashboard-theme .md-select-menu-container {\nborder-radius: 10px !important;\nborder: none !important;\n}\n.nr-dashboard-theme md-select-menu md-option[selected] {\ncolor: white !important;\nbackground-color: #1a3566 !important;\n}\n\n/*Template*/\nmd-card>img, md-card>md-card-header img, md-card md-card-title-media img {\nborder-radius: 10px !important;\n}\n\n.digital_time {\ntransform:scale(2);\n}\n.detail {\nbackground-color: #e3360b!important;\n}\n\n\n/* Změna barvy textu na bílou */\nbody.nr-dashboard-theme,\nbody.nr-dashboard-theme md-toolbar,\nbody.nr-dashboard-theme md-content md-card{\ncolor: white !important;\n}\n\n/* Změna barvy textu na bílou v levém menu */\nbody.nr-dashboard-theme md-sidenav,\nbody.nr-dashboard-theme md-sidenav div.md-list-item-inner {\ncolor: white !important;\n}\n\n/* Změna barvy textu názvů skupin na bílou */\n.nr-dashboard-theme ui-card-panel p.nr-dashboard-cardtitle {\ncolor: white !important;\n}\n\n.nr-dashboard-theme .nr-dashboard-numeric .value {\nbackground-color: #33333300;\ncolor: #eeeeee;\n}\n\n.nr-dashboard-theme .nr-dashboard-switch md-switch .md-thumb {\nbackground-color: #ffffff;\n}\n\nsvg:not(:root) {\noverflow-clip-margin: content-box;\noverflow: hidden;\ncolor: white !important;\n}\nsvg {\nfill: white;\n}\n\nmd-toast.md-default-theme .md-toast-content, md-toast .md-toast-content {\n    background: -webkit-linear-gradient(55deg,\n    #00BFFF 0%,\n    #008000 50%,\n    #FFA500 100%);\n    color: #FFFFFF;\n    border-radius: 10px;\n    border: 2px solid #ffffff;\n    box-shadow: 0px 0px 0px;\n}\n.nr-dashboard-theme .md-select-menu-container {\nborder-radius: 10px !important;\nborder: 2px solid #ffffff !important; \nbackground: -webkit-linear-gradient(55deg,\n#00BFFF 0%,\n#008000 50%,\n#FFA500 100%);\n}\n\n.nr-dashboard-theme .md-select-menu-container [selected]{\n    background: #eb9c2d;\n}\n\n.nr-dashboard-theme md-select-menu md-option {\ncolor: #ffffff;\n}\n\n.nr-dashboard-theme .nr-dashboard-dropdown md-select .md-select-value, .nr-dashboard-theme .nr-dashboard-dropdown\nmd-select .md-select-value.md-select-placeholder {\ncolor: #ffffff;\nborder-color: #ffffff;\nborder-bottom-width: 1px;\npadding: 0px 2px;\n}\n\n.nr-dashboard-theme .nr-dashboard-dropdown .md-select-icon {\ncolor: #ececec;\n}\n\n.nr-dashboard-theme .nr-dashboard-template path{\n    fill: #ffffff;\n}\n\n\n</style>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 280,
+        "y": 600,
+        "wires": [
+            [
+                "3b3fcbf28ec4be97"
+            ]
+        ]
+    },
+    {
+        "id": "dd2d7d71bd61d019",
+        "type": "function",
+        "z": "33c3a2507dd0fc0c",
+        "name": "function 1",
+        "func": "var tep = flow.get('temp');\nvar hra = flow.get('hranice');\nvar top = flow.get('topeni');\n\n\nif(top == 'zapnuto') msg.payload = 'zapnuto';\nif(top == 'vypnuto') msg.payload = 'vypnuto';\nif(top == 'automat')\n{\n    if(tep < hra){\n        msg.payload = 'automat - zapnuto';\n    }\n    else msg.payload = 'automat - vypnuto';\n} \nreturn msg;\n",
+        "outputs": 1,
+        "timeout": "1",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1260,
+        "y": 400,
+        "wires": [
+            [
+                "3d2bb6c5d4ddec0a",
+                "1d4b4b5a67b8ea6d",
+                "bc64ad172ae1f53d"
+            ]
+        ]
+    },
+    {
+        "id": "985fb15bf0fe6b39",
+        "type": "change",
+        "z": "33c3a2507dd0fc0c",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "hranice",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 620,
+        "y": 260,
+        "wires": [
+            [
+                "dd2d7d71bd61d019",
+                "a7411ab43669d07b"
+            ]
+        ]
+    },
+    {
+        "id": "fb6201451a3ac9c1",
+        "type": "change",
+        "z": "33c3a2507dd0fc0c",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "temp",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1020,
+        "y": 520,
+        "wires": [
+            [
+                "dd2d7d71bd61d019",
+                "ba1b696e44d26064"
+            ]
+        ]
+    },
+    {
+        "id": "c0a94fae8fb51a6f",
+        "type": "change",
+        "z": "33c3a2507dd0fc0c",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topeni",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 420,
+        "y": 400,
+        "wires": [
+            [
+                "dd2d7d71bd61d019",
+                "9e5774dcc32f1153"
+            ]
+        ]
+    },
+    {
+        "id": "8b0fdd6c3afc4237",
+        "type": "debug",
+        "z": "33c3a2507dd0fc0c",
+        "name": "debug 11",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 600,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "a7411ab43669d07b",
+        "type": "debug",
+        "z": "33c3a2507dd0fc0c",
+        "name": "debug 12",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 840,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "65d2a5d5014a3a0c",
+        "type": "debug",
+        "z": "33c3a2507dd0fc0c",
+        "name": "debug 13",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1000,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "ba1b696e44d26064",
+        "type": "debug",
+        "z": "33c3a2507dd0fc0c",
+        "name": "debug 14",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1240,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "9e5774dcc32f1153",
+        "type": "debug",
+        "z": "33c3a2507dd0fc0c",
+        "name": "debug 15",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 620,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "1d4b4b5a67b8ea6d",
+        "type": "debug",
+        "z": "33c3a2507dd0fc0c",
+        "name": "debug 16",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1500,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "bc64ad172ae1f53d",
+        "type": "rbe",
+        "z": "33c3a2507dd0fc0c",
+        "name": "",
+        "func": "rbe",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "septopics": true,
+        "property": "payload",
+        "topi": "topic",
+        "x": 1490,
+        "y": 440,
+        "wires": [
+            [
+                "2759cde98dde034b"
+            ]
+        ]
+    },
+    {
+        "id": "b580e7df371e2db4",
+        "type": "mqtt in",
+        "z": "33c3a2507dd0fc0c",
+        "name": "",
+        "topic": "node/climate-monitor:0/thermometer/0:0/temperature",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "eb6c9875cedf519d",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 240,
+        "y": 60,
+        "wires": [
+            [
+                "2c845917f3caa185",
+                "12aed13bcd83118a"
+            ]
+        ]
+    },
+    {
+        "id": "2c845917f3caa185",
+        "type": "ui_widget_thermometer",
+        "z": "33c3a2507dd0fc0c",
+        "group": "5be0536f4f49f91e",
+        "order": 7,
+        "width": 0,
+        "height": 0,
+        "name": "Vnitřní teplota",
+        "title": "Vnitřní teplota",
+        "numColor": 3,
+        "colorTop": "#f94e4e",
+        "colorMiddle": "#8bc34a",
+        "colorBottom": "#52abff",
+        "unit": "°C",
+        "scale": "normal",
+        "minTemp": "-40",
+        "maxTemp": "40",
+        "minTempMoreThanMaxTemp": "1",
+        "numberOfDecimals": "1",
+        "showPercentage": "0",
+        "currentTempFontSize": "1.2",
+        "x": 580,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "12aed13bcd83118a",
+        "type": "mqtt out",
+        "z": "33c3a2507dd0fc0c",
+        "name": "",
+        "topic": "temperature",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "bf8e66ec7015e5b3",
+        "x": 570,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "33bf431f22dec131",
+        "type": "mqtt in",
+        "z": "33c3a2507dd0fc0c",
+        "name": "",
+        "topic": "setT",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "bf8e66ec7015e5b3",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 90,
+        "y": 260,
+        "wires": [
+            [
+                "a84ed976e481801e"
+            ]
+        ]
+    },
+    {
+        "id": "c48ae41b.61d6b",
+        "type": "ui_numeric",
+        "z": "68dd58fa31033fc9",
+        "name": "",
+        "label": "Číslo 1",
+        "tooltip": "",
+        "group": "1a7f0c97.949c97",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "wrap": false,
+        "passthru": true,
+        "topic": "",
+        "topicType": "str",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "10",
+        "step": 1,
+        "className": "",
+        "x": 150,
+        "y": 220,
+        "wires": [
+            [
+                "d9c6c286.229f98"
+            ]
+        ]
+    },
+    {
+        "id": "d9c6c286.229f98",
+        "type": "change",
+        "z": "68dd58fa31033fc9",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "number1",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 360,
+        "y": 220,
+        "wires": [
+            [
+                "37f28ff8.eb524a"
+            ]
+        ]
+    },
+    {
+        "id": "f4b63e60.422a58",
+        "type": "ui_numeric",
+        "z": "68dd58fa31033fc9",
+        "name": "",
+        "label": "Číslo 2",
+        "tooltip": "",
+        "group": "1a7f0c97.949c97",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "wrap": false,
+        "passthru": true,
+        "topic": "",
+        "topicType": "str",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "10",
+        "step": 1,
+        "className": "",
+        "x": 150,
+        "y": 300,
+        "wires": [
+            [
+                "eeef6a9e.e68b78"
+            ]
+        ]
+    },
+    {
+        "id": "eeef6a9e.e68b78",
+        "type": "change",
+        "z": "68dd58fa31033fc9",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "number2",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 360,
+        "y": 300,
+        "wires": [
+            [
+                "37f28ff8.eb524a"
+            ]
+        ]
+    },
+    {
+        "id": "37f28ff8.eb524a",
+        "type": "function",
+        "z": "68dd58fa31033fc9",
+        "name": "Porovnání čísel",
+        "func": "var num1 = flow.get('number1');\nvar num2 = flow.get('number2');\n\nif (num1 === num2) {\n    msg.payload = 'Čísla jsou stejná';\n} else {\n    msg.payload = 'Čísla nejsou stejná';\n}\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 620,
+        "y": 260,
+        "wires": [
+            [
+                "7be16a4a.3a28a4"
+            ]
+        ]
+    },
+    {
+        "id": "7be16a4a.3a28a4",
+        "type": "ui_text",
+        "z": "68dd58fa31033fc9",
+        "group": "1a7f0c97.949c97",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Výstup",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": "",
+        "color": "#000000",
+        "x": 800,
+        "y": 260,
+        "wires": []
+    }
+]
